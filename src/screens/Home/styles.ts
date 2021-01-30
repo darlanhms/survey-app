@@ -21,7 +21,7 @@ export const TitleSection = styled.Text`
 export const TokenInput = styled.TextInput.attrs<unknown, TextInputProps>({
   placeholderTextColor: 'rgb(207, 207, 207)',
 })`
-  background-color: ${props => props.theme.colors.white};
+  background-color: white;
   padding-left: 16px;
   height: 48px;
   background: #ffffff;
@@ -43,7 +43,7 @@ export const ButtonBuild = styled.TouchableOpacity`
 `;
 
 export const ButonText = styled.Text`
-  color: ${props => props.theme.colors.white};
+  color: white;
   font-family: ${props => props.theme.fonts.defaultBold};
   font-size: 17px;
 `;
@@ -54,7 +54,7 @@ export const ButtonIcon = styled(Icon)`
 
 export const PopularCard = styled.TouchableOpacity`
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
-  background-color: ${props => props.theme.colors.white};
+  background-color: white;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
@@ -63,7 +63,7 @@ export const PopularCard = styled.TouchableOpacity`
 export const PopularTitle = styled.Text`
   font-family: ${props => props.theme.fonts.defaultBold};
   font-size: 17px;
-  color: ${props => props.theme.colors.black};
+  color: black;
 `;
 
 export const WriterStarsContainer = styled.View`
@@ -92,5 +92,5 @@ export const Star = styled(Icon)`
 export const TextAnswers = styled.Text`
   font-family: ${props => props.theme.fonts.defaultBold};
   font-size: 14px;
-  color: ${props => props.theme.colors.black};
+  color: black;
 `;
