@@ -23,6 +23,24 @@
     "plugins": ["react", "@typescript-eslint", "prettier"],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
-        "no-use-before-define": "off"
-    }
+        "no-use-before-define": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ]
+    },
+    "settings": {
+        "import/resolver": {
+          "typescript": {}
+        },
+        "react": {
+          "version": "detect"
+        }
+      }
 }
