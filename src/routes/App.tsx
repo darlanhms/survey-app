@@ -1,20 +1,24 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
-import Home from '../screens/Home';
+import HomeRouter from './Home';
 
-const AppStack = createStackNavigator();
+export type AppStackParamList = {
+  Home: undefined;
+};
+
+const AppDrawer = createDrawerNavigator<AppStackParamList>();
 
 const AppRouter: React.FC = () => (
-  <AppStack.Navigator
-    screenOptions={{
-      headerStyle: {
-        backgroundColor: '#333333',
-      },
-    }}
-  >
-    <AppStack.Screen name="Survey App" component={Home} />
-  </AppStack.Navigator>
+  <AppDrawer.Navigator initialRouteName="Home">
+    <AppDrawer.Screen
+      name="Home"
+      component={HomeRouter}
+      options={{
+        title: 'Survey App',
+      }}
+    />
+  </AppDrawer.Navigator>
 );
 
 export default AppRouter;
