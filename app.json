@@ -1,0 +1,12 @@
+{
+  "name": "survey-app",
+  "displayName": "survey-app",
+  "expo": {
+    "name": "survey-app",
+    "slug": "survey-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
